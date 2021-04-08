@@ -1,0 +1,545 @@
+PS C:\WINDOWS\system32> date
+
+Monday, April 5, 2021 9:59:06 PM
+
+PS C:\WINDOWS\system32> hostname
+Isal
+
+PS C:\WINDOWS\system32> ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a1b6:6291:2ba:bab5%9
+   IPv4 Address. . . . . . . . . . . : 192.168.100.22
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::1%9
+                                       192.168.100.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   
+ 
+ PS C:\WINDOWS\system32> mkdir \latihan
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          4/5/2021  10:02 PM                latihan
+
+PS C:\WINDOWS\system32> wmic context
+NAMESPACE             : root\cimv2
+ROLE                  : root\cli
+NODE(S)               : ISAL
+IMPLEVEL              : IMPERSONATE
+[AUTHORITY            : N/A]
+AUTHLEVEL             : PKTPRIVACY
+LOCALE                : ms_409
+PRIVILEGES            : ENABLE
+TRACE                 : OFF
+RECORD                : N/A
+INTERACTIVE           : OFF
+FAILFAST              : OFF
+OUTPUT                : STDOUT
+APPEND                : STDOUT
+USER                  : N/A
+AGGREGATE             : ON
+
+PS C:\WINDOWS\system32> whoami
+isal\supri
+
+PS C:\WINDOWS\system32> $PSVersionTable.BuildVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+10     0      19041  610
+
+PS C:\WINDOWS\system32> tzutil /g
+SE Asia Standard Time
+
+PS C:\WINDOWS\system32> typeperf -q
+\Search Indexer(*)\L6 Merges Now.
+\Search Indexer(*)\L6 Merge Speed - average
+\Search Indexer(*)\L6 Merge - Count
+\Search Indexer(*)\L6 Merge Speed - last
+\Search Indexer(*)\Persistent Indexes L7
+\Search Indexer(*)\L7 Merges Now.
+\Search Indexer(*)\L7 Merge Speed - average
+\Search Indexer(*)\L7 Merge - Count
+\Search Indexer(*)\L7 Merge Speed - last
+\Search Indexer(*)\Persistent Indexes L8
+\Search Indexer(*)\L8 Merges Now.
+\Search Indexer(*)\L8 Merge Speed - average
+\Search Indexer(*)\L8 Merge - Count
+\Search Indexer(*)\L8 Merge Speed - last
+The command completed successfully.
+
+PS C:\WINDOWS\system32> tree
+├───WCN
+│   └───en-US
+├───WindowsPowerShell
+│   └───v1.0
+│       ├───en
+│       ├───en-US
+│       ├───Examples
+│       ├───Modules
+│       │   ├───Appx
+│       │   ├───CimCmdlets
+│       │   ├───Defender
+│       │   ├───DirectAccessClientComponents
+│       │   ├───Dism
+│       │   │   └───en
+│       │   ├───DnsClient
+│       │   ├───EventTracingManagement
+│       │   ├───iSCSI
+│       │   ├───ISE
+│       │   ├───Microsoft.PowerShell.Archive
+│       │   │   └───en-US
+│       │   ├───Microsoft.PowerShell.Diagnostics
+│       │   ├───Microsoft.PowerShell.Host
+│       │   ├───Microsoft.PowerShell.Management
+│       │   ├───Microsoft.PowerShell.ODataUtils
+│       │   │   └───en-US
+│       │   ├───Microsoft.PowerShell.Security
+│       │   ├───Microsoft.PowerShell.Utility
+│       │   ├───Microsoft.WSMan.Management
+│       │   ├───MsDtc
+│       │   │   ├───en
+│       │   │   └───en-US
+│       │   ├───NetAdapter
+│       │   ├───NetConnection
+│       │   ├───NetEventPacketCapture
+│       │   ├───NetLbfo
+│       │   ├───NetNat
+│       │   ├───NetQos
+│       │   ├───NetSecurity
+│       │   │   └───en
+│       │   ├───NetSwitchTeam
+│       │   ├───NetTCPIP
+│       │   ├───NetworkConnectivityStatus
+│       │   ├───NetworkTransition
+│       │   ├───PnpDevice
+│       │   ├───PrintManagement
+│       │   ├───Provisioning
+│       │   ├───PSDiagnostics
+│       │   ├───PSScheduledJob
+│       │   ├───ScheduledTasks
+│       │   ├───Storage
+│       │   ├───StorageBusCache
+│       │   ├───TroubleshootingPack
+│       │   │   └───en-US
+│       │   ├───VpnClient
+│       │   │   └───en-US
+│       │   ├───Wdac
+│       │   ├───WindowsDeveloperLicense
+│       │   ├───WindowsErrorReporting
+│       │   └───WindowsUpdate
+│       ├───Schemas
+│       │   └───PSMaml
+│       └───SessionConfig
+├───WinMetadata
+├───winrm
+│   └───0409
+├───wo-SN
+├───xh-ZA
+├───yo-NG
+├───zh-CN
+├───zh-TW
+└───zu-ZA
+
+
+PS C:\WINDOWS\system32> tracerpt -rt NT Kernel Logger -o logfile.csv -of CSV
+
+Input
+----------------
+Logger(s):
+     NT
+     Kernel
+     Logger
+
+PS C:\WINDOWS\system32> tpmtool gatherlogs C:\Users\Public
+C:\Users\Public.
+
+PS C:\WINDOWS\system32> tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        588 K
+Registry                        92 Services                   0     24,440 K
+smss.exe                       408 Services                   0        948 K
+csrss.exe                      620 Services                   0      4,592 K
+wininit.exe                    724 Services                   0      5,848 K
+csrss.exe                      740 Console                    1      4,916 K
+services.exe                   788 Services                   0      8,272 K
+winlogon.exe                   824 Console                    1      9,044 K
+lsass.exe                      876 Services                   0     17,040 K
+fontdrvhost.exe                968 Services                   0      2,284 K
+fontdrvhost.exe                976 Console                    1      6,652 K
+svchost.exe                    984 Services                   0     29,464 K
+svchost.exe                    576 Services                   0     14,332 K
+svchost.exe                    568 Services                   0      7,388 K
+dwm.exe                       1048 Console                    1     51,636 K
+svchost.exe                   1196 Services                   0     16,664 K
+svchost.exe                   1356 Services                   0      5,364 K
+svchost.exe                   1364 Services                   0      6,672 K
+svchost.exe                   1372 Services                   0      9,444 K
+svchost.exe                   1380 Services                   0      9,888 K
+svchost.exe                   1436 Services                   0     11,320 K
+svchost.exe                   1444 Services                   0      9,308 K
+svchost.exe                   1740 Services                   0     12,716 K
+svchost.exe                   1760 Services                   0      7,160 K
+svchost.exe                   1780 Services                   0     12,556 K
+svchost.exe                   1796 Services                   0     12,816 K
+svchost.exe                   1808 Services                   0      9,672 K
+svchost.exe                   1844 Services                   0      6,464 K
+svchost.exe                   2008 Services                   0      6,120 K
+svchost.exe                   2020 Services                   0      9,952 K
+svchost.exe                   2088 Services                   0      6,752 K
+svchost.exe                   2116 Services                   0     13,656 K
+svchost.exe                   2128 Services                   0      5,896 K
+svchost.exe                   2140 Services                   0      9,668 K
+atiesrxx.exe                  2260 Services                   0      5,396 K
+svchost.exe                   2296 Services                   0     10,360 K
+dasHost.exe                   2312 Services                   0      4,428 K
+svchost.exe                   2344 Services                   0     16,696 K
+svchost.exe                   2472 Services                   0      9,000 K
+svchost.exe                   2524 Services                   0      6,212 K
+svchost.exe                   2720 Services                   0      6,880 K
+atieclxx.exe                  2728 Console                    1      9,548 K
+svchost.exe                   2736 Services                   0     64,864 K
+svchost.exe                   2756 Services                   0      5,472 K
+Memory Compression            2824 Services                   0    205,044 K
+svchost.exe                   2840 Services                   0      7,320 K
+svchost.exe                   2908 Services                   0      7,252 K
+svchost.exe                   2920 Services                   0      7,008 K
+svchost.exe                   2412 Services                   0     11,644 K
+RtkAudioService64.exe         2588 Services                   0      6,952 K
+svchost.exe                   3132 Services                   0      7,560 K
+svchost.exe                   3140 Services                   0      6,196 K
+svchost.exe                   3168 Services                   0      8,832 K
+svchost.exe                   3220 Services                   0     11,120 K
+svchost.exe                   3324 Services                   0      6,976 K
+spoolsv.exe                   3332 Services                   0     12,012 K
+svchost.exe                   3364 Services                   0     12,740 K
+svchost.exe                   3412 Services                   0      7,256 K
+svchost.exe                   3492 Services                   0     15,880 K
+mDNSResponder.exe             3584 Services                   0      5,952 K
+svchost.exe                   3620 Services                   0     13,348 K
+OfficeClickToRun.exe          3632 Services                   0     29,440 K
+svchost.exe                   3660 Services                   0     23,836 K
+DolbyDAX2API.exe              3672 Services                   0     11,036 K
+svchost.exe                   3688 Services                   0     32,344 K
+svchost.exe                   3716 Services                   0     14,984 K
+svchost.exe                   3788 Services                   0      8,232 K
+pg_ctl.exe                    3796 Services                   0      4,896 K
+svchost.exe                   3808 Services                   0      5,688 K
+RtkBtManServ.exe              3820 Services                   0      7,040 K
+ss_conn_service.exe           3848 Services                   0      5,244 K
+ss_conn_service2.exe          3884 Services                   0      6,264 K
+svchost.exe                   3892 Services                   0      7,024 K
+SynTPEnhService.exe           3912 Services                   0      7,184 K
+svchost.exe                   4004 Services                   0      5,124 K
+MsMpEng.exe                   4020 Services                   0     99,000 K
+wlanext.exe                   4048 Services                   0      7,580 K
+conhost.exe                   4084 Services                   0      4,428 K
+svchost.exe                   3160 Services                   0     19,240 K
+svchost.exe                   4104 Services                   0      6,656 K
+svchost.exe                   4132 Services                   0      9,476 K
+svchost.exe                   4220 Services                   0      6,724 K
+svchost.exe                   4464 Services                   0     10,972 K
+postgres.exe                  4728 Services                   0      7,716 K
+conhost.exe                   4740 Services                   0      6,448 K
+postgres.exe                  5112 Services                   0      4,912 K
+postgres.exe                  1296 Services                   0      6,684 K
+postgres.exe                  1344 Services                   0      6,172 K
+postgres.exe                  1352 Services                   0      5,312 K
+postgres.exe                  1112 Services                   0      5,840 K
+postgres.exe                  1312 Services                   0      5,332 K
+postgres.exe                  1332 Services                   0      5,552 K
+dllhost.exe                   4820 Services                   0      9,648 K
+NisSrv.exe                    5156 Services                   0      8,544 K
+RAVBg64.exe                   5248 Console                    1     12,324 K
+sihost.exe                    5272 Console                    1     23,544 K
+SynTPEnh.exe                  5368 Console                    1     16,028 K
+svchost.exe                   5440 Console                    1     24,024 K
+svchost.exe                   5500 Console                    1     31,472 K
+svchost.exe                   5560 Services                   0      6,048 K
+taskhostw.exe                 5672 Console                    1     16,168 K
+svchost.exe                   5748 Services                   0     15,364 K
+explorer.exe                  5836 Console                    1    126,480 K
+svchost.exe                   6080 Services                   0      7,612 K
+svchost.exe                   6136 Services                   0      7,008 K
+SearchIndexer.exe             5060 Services                   0     32,092 K
+SynTPHelper.exe               5432 Console                    1      5,016 K
+svchost.exe                   5496 Services                   0      8,904 K
+svchost.exe                   5896 Services                   0      8,004 K
+svchost.exe                   6256 Services                   0     16,240 K
+svchost.exe                   6308 Services                   0      7,152 K
+ctfmon.exe                    6348 Console                    1     23,340 K
+svchost.exe                   6688 Console                    1     21,956 K
+RadeonSettings.exe            7040 Console                    1     17,840 K
+StartMenuExperienceHost.e     5408 Console                    1     59,360 K
+RuntimeBroker.exe             4204 Console                    1     24,928 K
+RuntimeBroker.exe             6868 Console                    1     42,112 K
+YourPhone.exe                 7244 Console                    1     43,256 K
+SettingSyncHost.exe           7508 Console                    1      4,416 K
+ShellExperienceHost.exe       7676 Console                    1     46,564 K
+RuntimeBroker.exe             7848 Console                    1     16,524 K
+RAVBg64.exe                   7888 Console                    1      3,044 K
+RAVBg64.exe                   7900 Console                    1      3,072 K
+SecurityHealthSystray.exe     6068 Console                    1      8,596 K
+SecurityHealthService.exe     5936 Services                   0     12,048 K
+OneDrive.exe                  1060 Console                    1     41,780 K
+dllhost.exe                   1392 Console                    1     11,484 K
+TextInputHost.exe             1456 Console                    1     38,484 K
+RAVCpl64.exe                  1804 Console                    1        120 K
+svchost.exe                   2536 Services                   0      6,948 K
+SearchApp.exe                 7212 Console                    1     95,112 K
+svchost.exe                   7572 Services                   0      4,828 K
+svchost.exe                   8104 Services                   0      6,592 K
+svchost.exe                   4808 Services                   0      7,740 K
+chrome.exe                    8672 Console                    1    136,204 K
+chrome.exe                    8728 Console                    1      6,536 K
+amddvr.exe                    9068 Console                    1      9,724 K
+chrome.exe                    2968 Console                    1    178,516 K
+chrome.exe                    3408 Console                    1     36,216 K
+chrome.exe                    8420 Console                    1     15,380 K
+chrome.exe                    7232 Console                    1     37,848 K
+amdow.exe                     9172 Console                    1        904 K
+chrome.exe                    3648 Console                    1     77,668 K
+svchost.exe                   9052 Services                   0     15,796 K
+RuntimeBroker.exe             9008 Console                    1     12,460 K
+svchost.exe                   6576 Services                   0     11,200 K
+GoogleCrashHandler.exe        3184 Services                   0        140 K
+chrome.exe                    5904 Console                    1     17,692 K
+GoogleCrashHandler64.exe      6088 Services                   0         84 K
+svchost.exe                   6324 Console                    1     11,508 K
+SgrmBroker.exe                2340 Services                   0      6,960 K
+svchost.exe                   4612 Services                   0      8,576 K
+svchost.exe                   8320 Services                   0      6,632 K
+svchost.exe                   2208 Services                   0      9,412 K
+svchost.exe                  10132 Services                   0     15,360 K
+chrome.exe                    9768 Console                    1     52,328 K
+TGitCache.exe                 9968 Console                    1      8,420 K
+UserOOBEBroker.exe            7500 Console                    1      8,612 K
+ApplicationFrameHost.exe      2124 Console                    1     26,092 K
+WinStore.App.exe              9640 Console                    1      1,500 K
+RuntimeBroker.exe             5028 Console                    1     13,448 K
+RuntimeBroker.exe             9848 Console                    1     18,516 K
+Video.UI.exe                   544 Console                    1      1,440 K
+RuntimeBroker.exe             9464 Console                    1      7,780 K
+chrome.exe                    8376 Console                    1     45,384 K
+chrome.exe                    8344 Console                    1     58,760 K
+SystemSettings.exe            8168 Console                    1      1,404 K
+notepad++.exe                 6204 Console                    1     34,000 K
+chrome.exe                    3612 Console                    1    112,952 K
+chrome.exe                    7000 Console                    1     18,408 K
+powershell.exe                9836 Console                    1     59,572 K
+conhost.exe                   7112 Console                    1     14,824 K
+SearchProtocolHost.exe       10016 Services                   0     12,956 K
+SearchFilterHost.exe          7540 Services                   0      9,168 K
+tasklist.exe                  4576 Console                    1      9,532 K
+WmiPrvSE.exe                  9540 Services                   0      9,324 K
+
+PS C:\WINDOWS\system32> taskkill /pid 6252
+SUCCESS: Sent termination signal to the process with PID 6252.
+
+PS C:\WINDOWS\system32> setx MACHINE Brand1
+
+SUCCESS: Specified value was saved.
+
+PS C:\WINDOWS\system32> rpcping
+Exception 5 (0x00000005)
+Number of records is: 1
+ProcessID is 5652
+System Time is: 4/5/2021 15:38:40:612
+Generating component is 2
+Status is 0x5, 5
+Detection location is 1750
+Flags is 0
+NumberOfParameters is 1
+Long val: 0x5
+
+PS C:\WINDOWS\system32> powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> netstat -e -s
+Interface Statistics
+
+                           Received            Sent
+
+Bytes                     256943760        72397494
+Unicast packets              246408          206544
+Non-unicast packets           46680            6150
+Discards                          0               0
+Errors                            0               0
+Unknown protocols                 0
+
+IPv4 Statistics
+
+  Packets Received                   = 44901
+  Received Header Errors             = 0
+  Received Address Errors            = 83
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 4506
+  Received Packets Delivered         = 45533
+  Output Requests                    = 38744
+  Routing Discards                   = 0
+  Discarded Output Packets           = 7
+  Output Packet No Route             = 6
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+IPv6 Statistics
+
+  Packets Received                   = 2591
+  Received Header Errors             = 0
+  Received Address Errors            = 217
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 1479
+  Received Packets Delivered         = 2598
+  Output Requests                    = 1278
+  Routing Discards                   = 0
+  Discarded Output Packets           = 0
+  Output Packet No Route             = 0
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+ICMPv4 Statistics
+
+                            Received    Sent
+  Messages                  5           97
+  Errors                    0           0
+  Destination Unreachable   5           97
+  Time Exceeded             0           0
+  Parameter Problems        0           0
+  Source Quenches           0           0
+  Redirects                 0           0
+  Echo Replies              0           0
+  Echos                     0           0
+  Timestamps                0           0
+  Timestamp Replies         0           0
+  Address Masks             0           0
+  Address Mask Replies      0           0
+  Router Solicitations      0           0
+  Router Advertisements     0           0
+
+ICMPv6 Statistics
+
+                            Received    Sent
+  Messages                  204         221
+  Errors                    0           0
+  Destination Unreachable   0           26
+  Packet Too Big            0           0
+  Time Exceeded             0           0
+  Parameter Problems        0           0
+  Echos                     0           0
+  Echo Replies              0           0
+  MLD Queries               0           0
+  MLD Reports               0           0
+  MLD Dones                 0           0
+  Router Solicitations      0           6
+  Router Advertisements     22          0
+  Neighbor Solicitations    97          89
+  Neighbor Advertisements   85          100
+  Redirects                 0           0
+  Router Renumberings       0           0
+
+TCP Statistics for IPv4
+
+  Active Opens                        = 833
+  Passive Opens                       = 6
+  Failed Connection Attempts          = 25
+  Reset Connections                   = 83
+  Current Connections                 = 23
+  Segments Received                   = 37411
+  Segments Sent                       = 18968
+  Segments Retransmitted              = 0
+
+TCP Statistics for IPv6
+
+  Active Opens                        = 2
+  Passive Opens                       = 0
+  Failed Connection Attempts          = 2
+  Reset Connections                   = 0
+  Current Connections                 = 0
+  Segments Received                   = 16
+  Segments Sent                       = 6
+  Segments Retransmitted              = 0
+
+UDP Statistics for IPv4
+
+  Datagrams Received    = 10778
+  No Ports              = 352
+  Receive Errors        = 4157
+  Datagrams Sent        = 3688
+
+UDP Statistics for IPv6
+
+  Datagrams Received    = 2245
+  No Ports              = 26
+  Receive Errors        = 1453
+  Datagrams Sent        = 992
+  
+  
+  PS C:\WINDOWS\system32> label
+Volume in drive C: has no label
+Volume Serial Number is AA52-A024
+Volume label (32 characters, ENTER for none)? 2
+
+
+PS C:\WINDOWS\system32> finger supriansyahfaisal@gmail.com
+
+[gmail.com]
+
+PS C:\WINDOWS\system32> echo
+
+cmdlet Write-Output at command pipeline position 1
+Supply values for the following parameters:
+InputObject[0]: alhamdulillah
+InputObject[1]: 0
+InputObject[2]:
+alhamdulillah
+0
+
+PS C:\WINDOWS\system32> clear
+
+
+

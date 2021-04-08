@@ -1,0 +1,1 @@
+Belajr menggunakan terminal pada Os masing masing dan juga melakukan running sscripts pada terminal os,mengenal github,melakukan starting kit pada github  dan melakukan pengaturan pada organisasi github
