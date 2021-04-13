@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>For - of</title>
   </head>
   <body style="text-align: center">
-    <button onclick="urutkan()">urutkan</button>
+    <button onclick="tampil()">tampil</button>
     <p id="demo"></p>
 
     <script>
-      function urutkan() {
-        var text = "";
-        var i = 0;
-        while (i < 10) {
-          text += "<br> urutan " + i;
-          i++;
+      function tampil() {
+        let bahasa = "Praxis-Academy";
+        let text = "";
+        for (let x of bahasa) {
+          text += x + "<br>";
         }
         document.getElementById("demo").innerHTML = text;
       }

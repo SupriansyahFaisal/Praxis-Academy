@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>break - continue</title>
   </head>
   <body style="text-align: center">
-    <button onclick="urutkan()">urutkan</button>
+    <button onclick="brak()">skip loop 4</button>
     <p id="demo"></p>
 
     <script>
-      function urutkan() {
+      function brak() {
         var text = "";
-        var i = 0;
-        while (i < 10) {
-          text += "<br> urutan " + i;
-          i++;
+        var i;
+        for (i = 0; i < 10; i++) {
+          if (i == 4) {
+            continue;
+          }
+          text += "loop nomer" + i + "<br>";
         }
         document.getElementById("demo").innerHTML = text;
       }

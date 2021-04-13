@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body style="text-align: center">
     <button onclick="praxis()">Kelas</button>
     <p id="demo"></p>
-<script>
-    function praxis() {
-    var kelas = ["Frond-End","Python","Fill-Stack","node.js"];
-    var text ="";
-    var i;
- for ( i = 0; i  < kelas.length; i++) {
-     text += kelas[i] + "<br>";
-     
- }
- document.getElementById("demo").innerHTML=text;
-}
-</script>    
-</body>
+    <script>
+      function praxis() {
+        var kelas = ["Frond-End", "Python", "Fill-Stack", "node.js"];
+        var text = "";
+        var i;
+        for (i = 0; i < kelas.length; i++) {
+          text += kelas[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
 </html>
