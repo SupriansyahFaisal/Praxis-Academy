@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>while</title>
+    <link rel="stylesheet" href="/Kurikulum/CSS/main.css"
   </head>
-  <body style="text-align: center">
-    <button onclick="urutkan()">urutkan</button>
+  <div class="row">
+    <div class="column">
+      <h3>Switch</h3>
+      <button onclick="document.location ='switch.html'">previous</button>
+    </div>
+    <div class="column">
+      <h3>While</h3>
+      <h4>melalui blok kode sementara kondisi yang ditentukan benar</h4>
+      <button onclick="urutkan()">urutkan</button>
+    </div>
+    <div class="column">
+      <h3>Do/While</h3>
+      <button onclick="document.location='do-while.html'">Next</button>
+    </div>
+  </div>
+  <body>
     <p id="demo"></p>
 
     <script>
@@ -15,7 +30,7 @@
         var text = "";
         var i = 0;
         while (i < 10) {
-          text += "<br> urutan " + i;
+          text += "| urutan " + i;
           i++;
         }
         document.getElementById("demo").innerHTML = text;

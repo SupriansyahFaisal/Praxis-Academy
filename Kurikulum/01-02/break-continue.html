@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>break - continue</title>
+    <link rel="stylesheet" href="/Kurikulum/CSS/main.css"
   </head>
-  <body style="text-align: center">
-    <button onclick="brak()">skip loop 4</button>
-    <p id="demo"></p>
-
+  <body>
+    <div class="row">
+      <div class="column">
+        <h3>Do while</h3>
+        <button onclick="document.location='do-while.html'">
+        previous
+        </button>
+      </div>
+      <div class="column">
+        <h3>break - continue</h3>
+        <h4>Pernyataan break "melompat keluar" dari sebuah loop.</h4>
+        <h4>Pernyataan continue "melompati" satu iterasi dalam loop.</h4>
+        <button onclick="brak()">skip loop 4</button>
+      </div>
+      <div class="column">
+        <h3>For in</h3>
+        <button onclick="document.location='for-in.html'"> next</button>
+      </div>
+      <div class="row">  
+        <p id="demo"></p>
+      </div>
     <script>
       function brak() {
         var text = "";
@@ -18,7 +36,7 @@
           if (i == 4) {
             continue;
           }
-          text += "loop nomer" + i + "<br>";
+          text += " | loop nomer " + i;
         }
         document.getElementById("demo").innerHTML = text;
       }

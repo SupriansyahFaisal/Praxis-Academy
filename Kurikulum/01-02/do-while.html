@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do while</title>
+    <link rel="stylesheet" href="/Kurikulum/CSS/main.css"
   </head>
-  <body style="text-align: center">
-    <button onclick="perjumlahan()">coba</button>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h3>While</h3>
+        <button onclick="document.location='while.html'">previous</button>
+      </div>
+      <div class="column">
+        <h3>Do While</h3>
+        <h4>
+          do / while - melakukan loop melalui blok kode satu kali, dan kemudian
+          mengulang loop selama kondisi yang ditentukan benar
+        </h4>
+        <button onclick="perjumlahan()">coba</button>
+      </div>
+      <div class="column">
+        <h3>Break Continue</h3>
+        <button onclick="document.location='break-continue.html'">Next</button>
+      </div>
+    </div>
     <p id="demo"></p>
     <script>
       function perjumlahan() {
         var text = "";
         var i = 0;
         do {
-          text += " number " + i + "<br>";
+          text += " number " + i + " | ";
           i++;
         } while (i <= 5);
         document.getElementById("demo").innerHTML = text;

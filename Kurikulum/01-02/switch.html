@@ -4,37 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Switch</title>
+    <link rel="stylesheet" href="/Kurikulum/CSS/main.css"
   </head>
-  <body style="text-align: center">
-    <p id="demo" style="text-align: center"></p>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h3>if - else</h3>
+        <button onclick="document.location='if-else.html'">Previous</button>
+      </div>
+      <div class="column">
+        <h3>Switch</h3>
+        <h4>
+          Gunakan pernyataan switch untuk memilih salah satu dari banyak blok
+          kode yang akan dieksekusi.
+        </h4>
+        <button onclick="coba()">coba</button>
+      </div>
+      <div class="column">
+        <h3>while</h3>
+        <button onclick="document.location='while.html'">Next</button>
+      </div>
+    </div>
 
+    <p id="demo" style="text-align: center"></p>
     <script>
-      var hari;
-      switch (new Date().getDay()) {
-        case 0:
-          hari = "minggu";
-          break;
-        case 1:
-          hari = "senin";
-          break;
-        case 2:
-          hari = "selasa";
-          break;
-        case 3:
-          hari = "rabu";
-          break;
-        case 4:
-          hari = "kamis";
-          break;
-        case 5:
-          hari = "jumat";
-          break;
-        case 6:
-          hari = "sabtu";
-          break;
+      function coba() {
+        var hari;
+        switch (new Date().getDay()) {
+          case 0:
+            hari = "minggu";
+            break;
+          case 1:
+            hari = "senin";
+            break;
+          case 2:
+            hari = "selasa";
+            break;
+          case 3:
+            hari = "rabu";
+            break;
+          case 4:
+            hari = "kamis";
+            break;
+          case 5:
+            hari = "jumat";
+            break;
+          case 6:
+            hari = "sabtu";
+            break;
+        }
+        document.getElementById("demo").innerHTML = " Sekarang hari " + hari;
       }
-      document.getElementById("demo").innerHTML = " Sekarang hari " + hari;
     </script>
   </body>
 </html>

@@ -2,20 +2,41 @@
 <html lang="en">
   <head>
     <title>if-else</title>
+    <link rel="stylesheet" href="/Kurikulum/CSS/main.css"
   </head>
-  <body style="text-align: center">
-    <p>Tanggal dan waktu</p>
-    <button onclick="myFunction()">waktu</button>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h3>For</h3>
+        <button onclick="document.location='for.html'">Previous</button>
+      </div>
+      <div class="column">
+        <h3>if-else</h3>
+        <h4>
+          Gunakan else if untuk menentukan kondisi baru yang akan diuji, jika
+          kondisi pertama salah
+        </h4>
+        <button onclick="myFunction()">coba</button>
+      </div>
+      <div class="column">
+        <h3>Switch</h3>
+        <button onclick="document.location='switch.html'">Next</button>
+      </div>
+    </div>
     <p id="demo"></p>
 
     <script>
       function myFunction() {
         var hour = new Date().getHours();
         var ucapan;
-        if (hour < 18) {
+        if (hour < 9) {
+          ucapan = "Selamat pagi";
+        } else if (hour < 14) {
           ucapan = "Selamat Siang";
-        } else {
+        } else if (hour < 17) {
           ucapan = "Selamat Sore";
+        } else {
+          ucapan = "Selamat Malam";
         }
         document.getElementById("demo").innerHTML = ucapan;
       }
