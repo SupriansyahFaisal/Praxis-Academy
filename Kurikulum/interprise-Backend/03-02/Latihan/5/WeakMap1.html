@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+let cache = new Map();
+
+function process(obj) {
+  if (!cache.has(obj)) {
+    let result =obj;
+
+    cache.set(obj, result);
+  }
+
+  return cache.get(obj);
+}
+let obj = { };
+
+let result1 = process(obj);
+let result2 = process(obj); 
+obj = null;
+
+alert(cache.size); 
+</script>
