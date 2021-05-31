@@ -1,7 +1,7 @@
 fun main() {
     var firstname : String = "Muhammad Faisal "
     var lastname : String = "Supriansyah"
-    var fullname : String = "$firstname $lastname"
+    var fullname : String = "$firstname$lastname"
 
     var address : String = """
         >Kepulauan Riau,Tanjung Pinang,
