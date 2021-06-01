@@ -4,7 +4,6 @@
     <list default="true" id="1e7456a5-748a-4c9d-b9bf-6c157b2d5a6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/kotlinDasar/META-INF/kotlinDasar.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDasar/META-INF/kotlinDasar.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FunctionReturnType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FunctionReturnType.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,48 +37,50 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Kotlin.FunctionInfixNotationKt">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.TailRecursiveFunction2Kt">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtensionFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExtensionFunctionKt" />
+    <configuration name="FactorialLoopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FactorialLoopKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionInfixNotationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionInfixNotationKt" />
+    <configuration name="FunctionScopeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionScopeKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionReturnTypeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionReturnTypeKt" />
+    <configuration name="RecursiveFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RecursiveFunctionKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionVarargsParameterKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionVarargsParameterKt" />
+    <configuration name="TailRecursiveFunction2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TailRecursiveFunction2Kt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleExpressionFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SingleExpressionFunctionKt" />
+    <configuration name="TailRecursiveFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TailRecursiveFunctionKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +88,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.FunctionInfixNotationKt" />
-        <item itemvalue="Kotlin.ExtensionFunctionKt" />
-        <item itemvalue="Kotlin.FunctionVarargsParameterKt" />
-        <item itemvalue="Kotlin.SingleExpressionFunctionKt" />
-        <item itemvalue="Kotlin.FunctionReturnTypeKt" />
+        <item itemvalue="Kotlin.TailRecursiveFunction2Kt" />
+        <item itemvalue="Kotlin.TailRecursiveFunctionKt" />
+        <item itemvalue="Kotlin.FunctionScopeKt" />
+        <item itemvalue="Kotlin.FactorialLoopKt" />
+        <item itemvalue="Kotlin.RecursiveFunctionKt" />
       </list>
     </recent_temporary>
   </component>
@@ -104,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622529677875</updated>
       <workItem from="1622529689505" duration="11886000" />
+      <workItem from="1622562465046" duration="5301000" />
     </task>
     <servers />
   </component>
@@ -120,5 +122,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/TailRecursiveFunction.kt</url>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
