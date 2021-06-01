@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e7456a5-748a-4c9d-b9bf-6c157b2d5a6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kotlinDasar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boolean.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booolean.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataArray.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCharacter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataRange.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataString.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElseExpression.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElseIfExpression.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IfExpression.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntergerNumber.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Literals.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OperasiMatematika.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OperasiPerbandingan.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Variable.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VariableConstant.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhenExpression(switch).kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlinDasar/META-INF/kotlinDasar.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDasar/META-INF/kotlinDasar.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FunctionReturnType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FunctionReturnType.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +38,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Kotlin.UnitReturningFunctionKt">
+  <component name="RunManager" selected="Kotlin.FunctionInfixNotationKt">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -68,36 +50,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionDefaultParametersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionDefaultParametersKt" />
+    <configuration name="ExtensionFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExtensionFunctionKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionKt" />
+    <configuration name="FunctionInfixNotationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionInfixNotationKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionNamedArgumentKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionNamedArgumentKt" />
+    <configuration name="FunctionReturnTypeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionReturnTypeKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionParameterKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionParameterKt" />
+    <configuration name="FunctionVarargsParameterKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionVarargsParameterKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitReturningFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnitReturningFunctionKt" />
+    <configuration name="SingleExpressionFunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SingleExpressionFunctionKt" />
       <module name="kotlinDasar" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.UnitReturningFunctionKt" />
-        <item itemvalue="Kotlin.FunctionNamedArgumentKt" />
-        <item itemvalue="Kotlin.FunctionDefaultParametersKt" />
-        <item itemvalue="Kotlin.FunctionParameterKt" />
-        <item itemvalue="Kotlin.FunctionKt" />
+        <item itemvalue="Kotlin.FunctionInfixNotationKt" />
+        <item itemvalue="Kotlin.ExtensionFunctionKt" />
+        <item itemvalue="Kotlin.FunctionVarargsParameterKt" />
+        <item itemvalue="Kotlin.SingleExpressionFunctionKt" />
+        <item itemvalue="Kotlin.FunctionReturnTypeKt" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622529677875</updated>
-      <workItem from="1622529689505" duration="7957000" />
+      <workItem from="1622529689505" duration="11886000" />
     </task>
     <servers />
   </component>
